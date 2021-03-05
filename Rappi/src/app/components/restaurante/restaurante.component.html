@@ -1,0 +1,44 @@
+<div class="card flex-md-row border border-white" id="carta">
+  <div class="imagen" >
+    <img src={{restaurante.imagen}}   alt="" id="prod">
+  </div>
+  <div class="main-header" id="cartacuerpo">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+            <b class="nombre"  style=" font-family: Helvetica; Sans-serif; font-size:12pt; color:black">
+              {{restaurante.nombre}}
+            </b>
+          </div>
+
+      <div class="row">
+          <div class="categoria" style=" font-size:9pt;font-family: Helvetica; color:grey">
+            {{restaurante.categoria}}
+          </div>
+      </div>
+    <div class="row">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAZlBMVEX///8AAAA8PDyvr693d3fHx8ednZ3j4+MkJCQGBgby8vJaWlovLy8UFBS6urpBQUEaGhp+fn7p6elfX19NTU1TU1OkpKRsbGyGhoYpKSnR0dFHR0eUlJQWFhbt7e35+fnQ0NBxcXF+Eit3AAAEuElEQVR4nMVb63qiMBBFEJGbAlK1asW+/0tukXVtJhMyOWS/zL9WyBySk7llEkWIFI9jW/Zxta3zvN5WcV+2x0cBDeWue7feNytWmv16939RDLs2znnlL8njdjf8J/XpqZ5X/pL6lPrXnp0/Zdon+TxnXtVfPly0T/Jx8aY+7d3Vj9L7WYn0iqkf5bocQnfA1Y9y6JbpvwmJb5b6tkB9Wi1VP0oFr0PrQ/0oLaS+2/vSv1rtASbsvvzpX62+dq76LdNfx4dzkl6y+zDcs0uanA+xha5uyzDMbr6Yt7PZOZ576+Dgowaz6cv7zcx6dpve7C17MYLC9CV1mVj9fZGUpsWIhcFCZ9j9eSscoGgN01CJNkPB689PDlupO/EQKsEnDPz8uzpXgwOPrTzg+bcHrGnKGjIrE7n91yTu6kdJuOD1MP8OZ38qOLrKODrNWqQd80K5IMgdSmbAGavcMfb/jKsf5ayP+GXeTjptcnD535LoG3JvelYnwNZDZHvZSmmQag/GCwO6STrdsvC7WqPs1ov+HwTaHFTcYzdt/b1lFheNB0yk2mk+TMS/4i55KqFj1/rkaiZQsv9uPwlj8y0wFNpu1AyixsBSoL+Xc0WzSJSHNP+qBJ/1jzUf9mcHSvGr+judgEZi/9+sedgfzqhnUqeAOmEJAS/vxzeCxykRe8NYTzEaS8OIa8nz1ND/3uU0fBHFH64A6DL/Yk5m/skjAO0z3zwju1RoAp0BUIP4tjSk/nQSDecOIDqpej5f/yeLkwt9kDuAjkzBi2oEmDSNdAdAI46/Uz2obqiWVlsBAAVRNZlbEolKnAAKgLqEKT4l8yKOAhEAxBxOq61GTLm43o0AKFQaxsz/etsYiwAQp/P8WkIBiV9ZAGCjk2Ct/kseiEIAOlXb+KLqpGLxUBgAwrjR7aqBgkMmhgFQ/U7zw0F1ThwyYQwA8bxF9FD+ruUjgQAi1Rg+oiNKARSASoIjsYOW+oUPAGoC0hLr7FINAAGoLCyJaXIpB4AAVHfQkyVxqYaBANTwJyZJuUtCDAJQU4AqUnN3l4IYCEA1BFuyLUXJ9jIAd0VhHanO2KUkBwIYFIW5HwBbh6WjALwsgQsCugQ4CZX9JEdASYhvQ9WPihHQbYgbIvKqFAE1RLgppsmmEAE1xbgz0iJMGQLqjHB3DCKg7hgPSEAENCDBQzIQAQ3J8KAUQ6AFpXhYjiHQwnI8McEQ6IkJnJpBCJjUDE5OIQRMcgqn5xACJj2HCxQIAq5AAZdoEARsiQYtUs0j4MnMFqnQMt08ApZLfJkOLVRaEHBLyRcq0VKtBQETKZtKtWCx2oKAqfmbitVgud6CQJ8Bc7keO7CwINA5YD6wwI5s5hFctZ9mjmywQytekmmnMQfvc4dW0LGdQbrvuOkZlzZ7bIcdXDqJ5eASOrp1EdvRLXZ47SDWw2vs+F4s9uN7tIFBJpIGhuAtHOGbWMK38QRvZArfyhW+mS14O1/4hsbwLZ3hm1qDt/WGb2wO39odvrk9fHt/+AsOUfArHlH4Sy7hr/lEwS86ReGvekXBL7tF4a/7RcEvPD4hhL3yOUrgS6+jBL72+5SwF5+fEvjq9yRBL7+/Ufi7/v8HZYVGQLZbMzUAAAAASUVORK5CYII=" width="12" height="12"  alt="">
+      <div class="tiempo" style="text-indent:3px;font-size:9pt;font-family: Helvetica; color:black">
+          {{restaurante.tiempo}}
+        </div>
+
+        <div class="precio"  style="text-indent:17px; font-size:9pt;font-family: Helvetica; color:black">
+          {{restaurante.precio |currency}}
+        </div>
+    </div>
+    </div>
+
+      <div class="col-1 ">
+        <div class="row">
+          <img src="https://images.vexels.com/media/users/3/134803/isolated/lists/dc835f4dbe0dc396f68307d6c593a1d7-icono-de-estrella-de-dibujos-animados.png" width="12" height="12"  alt="">
+          <b class="calificacion" style="text-indent:3px; font-family: Zapf-Chancery, Sans-serif; font-size:8pt; color:black">
+            {{restaurante.calificacion}}
+          </b>
+        </div>
+          </div>
+
+      </div>
+
+    </div>
+
+</div>

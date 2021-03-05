@@ -1,0 +1,11 @@
+<div class="label" style=" font-size:10pt;font-family: Helvetica; color:grey">
+  Home > Bogotá > Restaurantes
+  </div>
+<div class="main-container">
+  <div class="row">
+  <app-restaurante *ngFor="let restaurante of restaurantes"
+  [restaurante]="restaurante" id="individual">
+  </app-restaurante>
+</div>
+
+</div>
